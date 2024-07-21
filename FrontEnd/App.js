@@ -9,10 +9,8 @@ async function buscarProdutos() {
   const resposta = await fetch('http://18.230.194.98:3000/produtos');
   const produtos = await resposta.json();
 
-  // Limpar lista de produtos
   listaProdutos.innerHTML = '';
 
-  // Adicionar cada produto à lista
   produtos.forEach(produto => {
     const li = document.createElement('li');
     li.style.whiteSpace = 'pre-wrap';
@@ -27,7 +25,6 @@ async function buscarProdutos() {
     });
     li.appendChild(botaoDeletar);
 
-    // Adicionar botão de atualizar para cada produto
     const botaoAtualizar = document.createElement('button');
     botaoAtualizar.innerHTML = 'Atualizar';
     botaoAtualizar.addEventListener('click', () => {
@@ -63,7 +60,6 @@ formularioAdicionarProduto.addEventListener('submit', async event => {
   await buscarProdutos();
 });
 
-// Função para adicionar um novo produto
 async function adicionarProduto(nome, preco) {
   const resposta = await fetch('http://18.230.194.98:3000/produtos', {
     method: 'POST',
@@ -88,7 +84,6 @@ async function deletarProduto(id) {
   return resposta.json();
 }
 
-// Função para atualizar um produto
 async function atualizarProduto(id, dados) {
   try {
     const resposta = await fetch('http://18.230.194.98:3000/produtos/' + id, {
@@ -103,7 +98,7 @@ async function atualizarProduto(id, dados) {
     }
 
     const resultado = await resposta.json();
-    console.log(resultado); // Pode ser útil verificar a resposta do servidor
+    console.log(resultado);
 
     window.location.reload();
     return resultado;
@@ -111,6 +106,4 @@ async function atualizarProduto(id, dados) {
     console.error('Erro durante a atualização:', erro.message);
   }
 }
-
-// Buscar todos os produtos ao carregar a página
 buscarProdutos();
