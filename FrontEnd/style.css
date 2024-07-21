@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    align-items: center;
+}
+
+head {
+    padding: 0;
+}
+
+.header {
+    border-bottom: #dfdfdf 1.5px solid;
+    padding-bottom: 5px;
+}
+
+h1 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: flex-end;
+}
+
+li {
+    display: block;
+    margin: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #e0e0e0;
+}
+
+button {
+    float: right;
+    margin-left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 10px 3px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 50%;
+    line-height: 18px;
+    margin-bottom: 4px;
+    margin-top: -1px;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+form {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 0px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+h2 {
+    padding-top: 5px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 120px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+#updateForm {
+    padding-top: 15px;
+}
+
+#products {
+    background-color: #e9e9e9;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.atualizar {
+    padding-top: 10px;
+}
+
+.header_p {
+    padding: 8px;
+    border-bottom: #dfdfdf 1.5px solid;
+    border-top: #dfdfdf 1.5px solid;
+}
